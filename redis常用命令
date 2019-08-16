@@ -1,0 +1,8 @@
+启动redis:  redis-server.exe
+连接redis:  redis-cli -h 127.0.0.1 -p 6379
+清空所有数据: flushall
+获取所有key:  keys *
+安装为windows服务：redis-server  --service-install  redis.windows.conf
+开启服务：redis-server --service-start
+停止服务：redis-server --service-stop
+卸载服务：redis-server --service-uninstall
