@@ -7,3 +7,7 @@
 停止服务：redis-server --service-stop
 卸载服务：redis-server --service-uninstall
 Redis的的的的主从配置：https://www.cnblogs.com/zwcry/p/9046207.html
+Redis要达到高并发，高可用，一个redis是不可行的，必须给redis建立集群，以一个master和多个slave的模式工作，
+主要是master写，多个salve读，即是读写分类的情况，以读多写少的标准，如果写多的话就以异步的形式展现服务。
+redis配置文件启动：redis-server redis.windows.conf
+github删除文件夹：https://www.cnblogs.com/kingchan/p/9256704.html
